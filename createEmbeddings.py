@@ -32,4 +32,4 @@ encoding = tiktoken.get_encoding(embedding_encoding)
 
 # This may take a few minutes
 df["embedding"] = df.combined.apply(lambda x: get_embedding(x, engine=embedding_model))
-df.to_csv("data/all_in_tweets_more_data_embeddings.csv")
+df.to_csv("data/all_in_tweets_embeddings.csv")
