@@ -5,7 +5,7 @@ from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt
 
 # Load embeddings from a CSV file
-embeddings_csv_path = "data/all_in_tweets_more_data_embeddings.csv"
+embeddings_csv_path = "data/all_in_tweets_embeddings.csv"
 df = pd.read_csv(embeddings_csv_path, index_col=0)
 embeddings = np.stack(df["embedding"].apply(eval).values)  # Convert embeddings from string to NumPy array
 
@@ -48,5 +48,5 @@ for i in range(num_clusters):
 plt.legend()
 plt.xlabel("t-SNE Dimension 1")
 plt.ylabel("t-SNE Dimension 2")
-plt.title("Clusters of Transaction Embeddings with Tweet Authors")
+plt.title("Clusters of Tweet Embeddings with Authors")
 plt.show()
