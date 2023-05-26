@@ -5,5 +5,5 @@ For those interested in taking a closer look, here is the supporting python appl
 * all_in_tweets.csv --> Dataset the clustering algorithm was run on
 
 ## Run It
-1. Run createEmbeddings (output embeddings CSV)
+1. Run createEmbeddings (output embeddings CSV)...this takes a couple minutes.
 2. Run graphClusters.py
